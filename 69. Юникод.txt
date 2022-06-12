@@ -1,0 +1,21 @@
+<?php
+
+namespace HexletBasics\DeepIntoStrings\Unicode;
+
+function invertCase($text)
+{
+    // BEGIN
+    $result = '';
+
+    for ($i = 0; $i < mb_strlen($text); $i++) {
+        $symbol = mb_substr($text, $i, 1);
+        if (mb_strtoupper($symbol) === $symbol) {
+            $result .= mb_strtolower($symbol);
+        } else {
+            $result .= mb_strtoupper($symbol);
+        }
+    }
+
+    return $result;
+    // END
+}

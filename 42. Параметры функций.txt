@@ -1,0 +1,11 @@
+<?php
+
+namespace HexletBasics\DefineFunctions\Parameters;
+
+// BEGIN
+function truncate($str, $length)
+{
+    $newString = substr($str, 0, $length);
+    return "{$newString}...";
+}
+// END

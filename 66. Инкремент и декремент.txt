@@ -1,0 +1,22 @@
+<?php
+
+namespace HexletBasics\Loops\Mutators;
+
+// BEGIN
+function makeItFunny($text, $n)
+{
+    $result = '';
+    $i = 0;
+    
+    while ($i < strlen($text)) {
+        if (($i + 1) % $n === 0) {
+            $result .= strtoupper($text[$i]);
+            $i++;
+        } 
+        $result .= $text[$i];
+        $i++;
+    }
+
+    return $result;
+}
+// END

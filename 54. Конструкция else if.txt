@@ -1,0 +1,16 @@
+<?php
+
+namespace HexletBasics\Conditionals\ElseIfStatement;
+
+// BEGIN
+function whoIsThisHouseToStarks($house)
+{
+    if ($house === 'Karstark' || $house === 'Tully') {
+        return 'friend';
+    } elseif ($house === 'Lannister' || $house === 'Frey') {
+        return 'enemy';
+    } 
+    
+    return 'neutral';
+}
+// END

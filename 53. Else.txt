@@ -1,0 +1,15 @@
+<?php
+
+namespace HexletBasics\Conditionals\IfElse;
+
+// BEGIN
+function normalizeURL($url)
+{
+    if (strpos($url, 'http://') === false) {
+        return "https://{$url}";
+    } else {
+        $newUrl = substr($url, 7);
+        return "https://{$newUrl}";
+    }
+}
+// END

@@ -1,0 +1,10 @@
+<?php
+
+namespace HexletBasics\Conditionals\Elvis;
+
+// BEGIN
+function generateAmount($count, $cost)
+{
+    return $count ?: $cost * 3;
+}
+// END

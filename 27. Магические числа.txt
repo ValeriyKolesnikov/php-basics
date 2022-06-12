@@ -1,0 +1,9 @@
+<?php
+
+$kingNumber = 6;
+$roomCount = 17;
+$king = 'King Balon the 6th';
+
+// BEGIN 
+print_r($king . ' has ' . ($kingNumber * $roomCount) . ' rooms.');
+// END

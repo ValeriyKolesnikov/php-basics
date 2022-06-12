@@ -1,0 +1,10 @@
+<?php
+
+namespace HexletBasics\Loops\EdgeCases;
+
+// BEGIN
+function isArgumentsForSubstrCorrect($str, $index, $length)
+{
+    return ($length >= 0) && ($index >= 0) && ($index <= strlen($str) - 1) && ($length + $index) <= strlen($str);
+}
+// END

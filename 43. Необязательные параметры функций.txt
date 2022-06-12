@@ -1,0 +1,12 @@
+<?php
+
+namespace HexletBasics\DefineFunctions\DefaultArguments;
+
+// BEGIN
+function getHiddenCard($cardNumber, $asteriskCount = 4)
+{
+    $shortCardNumber = substr($cardNumber, -4, 4);
+    $asterisks = str_repeat('*', $asteriskCount);
+    return "{$asterisks}{$shortCardNumber}";
+}
+// END

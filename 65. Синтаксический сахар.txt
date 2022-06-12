@@ -1,0 +1,20 @@
+<?php
+
+namespace HexletBasics\Loops\SyntaxSugar;
+
+// BEGIN
+function filterString($str, $char)
+{
+    $i = 0;
+    $result = '';
+
+    while ($i < strlen($str)) {
+        if ($str[$i] !== $char) {
+            $result .= $str[$i];
+        }
+        $i += 1;
+    }
+
+    return $result;
+}
+// END

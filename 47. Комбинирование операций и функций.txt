@@ -1,0 +1,10 @@
+<?php
+
+namespace HexletBasics\Logic\CombineExpressions;
+
+// BEGIN
+function isInternationalPhone($phoneNumber)
+{
+    return $phoneNumber[0] === '+';
+}
+// END

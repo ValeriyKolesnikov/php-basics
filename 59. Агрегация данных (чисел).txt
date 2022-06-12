@@ -1,0 +1,16 @@
+<?php
+
+namespace HexletBasics\Loops\AgregationNumber;
+
+// BEGIN
+function multiplyNumbersFromRange($start, $finish)
+{
+    $multiplay = 1;
+    $i = $start;
+    while($i <= $finish) {
+        $multiplay = $multiplay * $i;
+        $i = $i + 1;
+    }
+    return $multiplay;
+}
+// END

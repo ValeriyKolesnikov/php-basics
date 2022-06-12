@@ -1,0 +1,10 @@
+<?php
+
+namespace HexletBasics\Logic\TernaryOperator;
+
+// BEGIN
+function flipFlop($line)
+{
+    return ($line === 'flip') ? 'flop' : 'flip';
+}
+// END

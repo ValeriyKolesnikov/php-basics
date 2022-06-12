@@ -1,0 +1,7 @@
+<?php
+
+// BEGIN
+$numberFirst = 1.1;
+$numberSecond = -100;
+print_r($numberFirst * $numberSecond);
+// END

@@ -1,0 +1,21 @@
+<?php
+
+namespace HexletBasics\Loops\ConditionsInsideLoops;
+
+// BEGIN
+function countChars($str, $char)
+{
+    $i = 0;
+    $count = 0;
+    $newStr = strtolower($str);
+    $newChar = strtolower($char);
+    while ($i < strlen($newStr)) {
+        if ($newStr[$i] === $newChar) {
+            $count = $count + 1;
+        }
+        $i = $i + 1;
+    }
+
+    return $count;
+}
+// END
